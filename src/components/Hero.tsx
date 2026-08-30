@@ -18,7 +18,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
 
         {/* Responsive Headline */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-[44px] text-[var(--color-primary)] font-serif leading-tight font-bold">
-          We Provide Quality Food Packaging Materials.
+          We Make & Sell Quality Food Packaging Products.
         </h2>
 
         {/* Responsive Subtitle */}
