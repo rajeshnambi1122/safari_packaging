@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Get factory-direct pricing on custom food packaging, pizza boxes, cups, and eco-friendly takeout containers.",
   openGraph: {
     title: "Safari Packaging Corp. | Premium Custom Food Packaging",
-    description: "Quality Food Packaging Materials & Custom Boxes. Get your quote today.",
+    description: "Quality Food Packaging Products & Custom Boxes. Get your quote today.",
     siteName: "Safari Packaging",
     images: [
       {
