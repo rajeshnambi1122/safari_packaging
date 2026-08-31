@@ -34,11 +34,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
               <Link href="#" className="hover:text-[var(--color-secondary)] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </Link>
-              <Link href="#" className="hover:text-[var(--color-secondary)] transition-colors">
+              <Link href="https://www.instagram.com/safaripackaging/" className="hover:text-[var(--color-secondary)] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-              </Link>
-              <Link href="#" className="hover:text-[var(--color-secondary)] transition-colors">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
               </Link>
             </div>
           </div>
@@ -58,18 +55,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           <div className="flex flex-col gap-4 lg:col-span-2">
             <h3 className="text-lg font-bold uppercase tracking-wider font-serif">Get In Touch</h3>
             <div className="flex flex-col gap-3 font-serif text-gray-300 text-base">
-              <div className="flex items-start gap-3">
-                <MapPin className="shrink-0 mt-0.5" size={18} />
+              <a href="https://maps.google.com/?q=1119+Estey+Rd+Beaverton+MI+48612" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-white transition-colors group cursor-pointer">
+                <MapPin className="shrink-0 mt-0.5 group-hover:text-[var(--color-secondary)] transition-colors" size={18} />
                 <p>1119 Estey Rd<br />Beaverton, MI 48612</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="shrink-0" size={18} />
+              </a>
+              <a href="tel:+18122029149" className="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer">
+                <Phone className="shrink-0 group-hover:text-[var(--color-secondary)] transition-colors" size={18} />
                 <p>+1 812-202-9149</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="shrink-0" size={18} />
-                <p>hello@safaripackaging.com</p>
-              </div>
+              </a>
+              <a href="mailto:sales@safaripackaging.com" className="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer">
+                <Mail className="shrink-0 group-hover:text-[var(--color-secondary)] transition-colors" size={18} />
+                <p>sales@safaripackaging.com</p>
+              </a>
             </div>
 
             {onOpenQuote && (

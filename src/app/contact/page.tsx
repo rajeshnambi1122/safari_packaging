@@ -120,11 +120,10 @@ export default function ContactPage({ onOpenQuote }: ContactPageProps) {
                         key={prod}
                         type="button"
                         onClick={() => toggleProduct(prod)}
-                        className={`px-3 py-1.5 rounded-full text-sm font-serif border-2 transition-all duration-200 ${
-                          products.includes(prod) 
-                            ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)] shadow-sm' 
-                            : 'bg-white text-gray-700 border-gray-300 hover:border-[var(--color-primary)]'
-                        }`}
+                        className={`px-3 py-1.5 rounded-full text-sm font-serif border-2 transition-all duration-200 ${products.includes(prod)
+                          ? 'bg-[var(--color-primary)] text-white border-[var(--color-primary)] shadow-sm'
+                          : 'bg-white text-gray-700 border-gray-300 hover:border-[var(--color-primary)]'
+                          }`}
                       >
                         {prod}
                       </button>
@@ -148,35 +147,35 @@ export default function ContactPage({ onOpenQuote }: ContactPageProps) {
             <h2 className="text-xl md:text-2xl text-[var(--color-primary)] font-serif font-bold">Contact Information</h2>
 
             <div className="flex flex-col gap-6 font-serif">
-              <div className="flex items-start gap-4 text-gray-900">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-[var(--color-primary)]">
-                  <MapPin className="text-[var(--color-primary)]" size={20} />
+              <a href="https://maps.google.com/?q=1119+Estey+Rd+Beaverton+MI+48612" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 text-gray-900 hover:opacity-80 transition-opacity group cursor-pointer">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-[var(--color-primary)] group-hover:bg-[var(--color-primary)] transition-colors">
+                  <MapPin className="text-[var(--color-primary)] group-hover:text-white transition-colors" size={20} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-0.5 text-[var(--color-primary)]">Our Location</h3>
-                  <p className="text-gray-800 text-base">1119 Estey Rd<br />Beaverton<br />MI - 48612</p>
+                  <h3 className="font-bold text-lg mb-0.5 text-[var(--color-primary)] group-hover:text-[var(--color-primary)]">Our Location</h3>
+                  <p className="text-gray-800 text-base group-hover:text-gray-900">1119 Estey Rd<br />Beaverton<br />MI - 48612</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start gap-4 text-gray-900">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-[var(--color-primary)]">
-                  <Phone className="text-[var(--color-primary)]" size={20} />
+              <a href="tel:+18122029149" className="flex items-start gap-4 text-gray-900 hover:opacity-80 transition-opacity group cursor-pointer">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-[var(--color-primary)] group-hover:bg-[var(--color-primary)] transition-colors">
+                  <Phone className="text-[var(--color-primary)] group-hover:text-white transition-colors" size={20} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-0.5 text-[var(--color-primary)]">Phone Number</h3>
-                  <p className="text-gray-800 text-base">+1 812-202-9149<br />Mon-Fri, 10am - 6pm EST</p>
+                  <p className="text-gray-800 text-base group-hover:text-gray-900">+1 812-202-9149<br />Mon-Fri, 10am - 6pm EST</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start gap-4 text-gray-900">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-[var(--color-primary)]">
-                  <Mail className="text-[var(--color-primary)]" size={20} />
+              <a href="mailto:sales@safaripackaging.com" className="flex items-start gap-4 text-gray-900 hover:opacity-80 transition-opacity group cursor-pointer">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm border border-[var(--color-primary)] group-hover:bg-[var(--color-primary)] transition-colors">
+                  <Mail className="text-[var(--color-primary)] group-hover:text-white transition-colors" size={20} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-0.5 text-[var(--color-primary)]">Email Address</h3>
-                  <p className="text-gray-800 text-base">hello@safaripackaging.com<br />support@safaripackaging.com</p>
+                  <p className="text-gray-800 text-base group-hover:text-gray-900">sales@safaripackaging.com</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
