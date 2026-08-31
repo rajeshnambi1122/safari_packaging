@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
               We provide quality food packaging materials. More than a box, it's your brand. Eco-friendly and sustainable.
             </p>
             <div className="flex gap-4 pt-1">
-              <Link href="#" className="hover:text-[var(--color-secondary)] transition-colors">
+              <Link href="https://www.facebook.com/profile.php?id=61593748870980" className="hover:text-[var(--color-secondary)] transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </Link>
               <Link href="https://www.instagram.com/safaripackaging/" className="hover:text-[var(--color-secondary)] transition-colors">
