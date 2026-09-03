@@ -17,9 +17,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
       <div className="flex-1 flex flex-col gap-4 sm:gap-5 px-5 sm:px-8 lg:pl-12 xl:pl-20 lg:max-w-lg xl:max-w-xl font-serif lg:shrink-0">
 
         {/* Responsive Headline */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-[44px] text-[var(--color-primary)] font-serif leading-tight font-bold">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-[44px] text-[var(--color-primary)] font-serif leading-tight font-bold">
           We Make & Sell Quality Food Packaging Products.
-        </h2>
+        </h1>
 
         {/* Responsive Subtitle */}
         <p className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-[var(--color-primary)] tracking-wide font-serif leading-relaxed">

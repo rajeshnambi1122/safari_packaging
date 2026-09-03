@@ -10,8 +10,29 @@ const jomolhari = Jomolhari({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://safaripackaging.com'),
   title: "Safari Packaging | Factory-Direct Food Packaging",
   description: "Get factory-direct pricing on custom food packaging, pizza boxes, cups, and eco-friendly takeout containers.",
+  keywords: [
+    "food packaging",
+    "custom pizza boxes",
+    "eco-friendly packaging",
+    "takeout containers",
+    "custom paper cups",
+    "wholesale food packaging",
+    "factory direct packaging",
+    "custom food packaging",
+    "restaurant packaging supplies",
+    "custom bakery boxes",
+    "burger boxes",
+    "kraft paper bags",
+    "printed food boxes",
+    "sustainable packaging",
+    "custom printed cups",
+    "food service disposables",
+    "takeaway packaging"
+  ],
+  authors: [{ name: "Safari Packaging" }],
   openGraph: {
     title: "Safari Packaging Corp. | Premium Custom Food Packaging",
     description: "Quality Food Packaging Products & Custom Boxes. Get your quote today.",
@@ -26,6 +47,12 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Safari Packaging | Premium Custom Food Packaging",
+    description: "Quality Food Packaging Products & Custom Boxes. Get your quote today.",
+    images: ["/images/og-image.jpg"],
   },
 };
 

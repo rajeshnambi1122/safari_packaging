@@ -9,6 +9,7 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { ProcessSection } from "@/components/ProcessSection";
 import { SampleKitBanner } from "@/components/SampleKitBanner";
 import { EcoSection } from "@/components/EcoSection";
+import { LeadershipSection } from "@/components/LeadershipSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FaqSection } from "@/components/FaqSection";
 import { CtaBanner } from "@/components/CtaBanner";
@@ -35,6 +36,7 @@ export default function Home() {
       <WhyChooseUs onOpenQuote={handleOpenQuote} />
       <ProcessSection onOpenQuote={handleOpenQuote} />
       <EcoSection onOpenQuote={handleOpenQuote} />
+      <LeadershipSection />
       <TestimonialsSection />
       <FaqSection onOpenQuote={handleOpenQuote} />
       <CtaBanner onOpenQuote={handleOpenQuote} />
