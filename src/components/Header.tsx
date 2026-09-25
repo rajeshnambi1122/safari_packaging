@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PhoneCall, Menu, X, Home, Leaf, Package } from 'lucide-react';
@@ -10,9 +10,20 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onOpenQuote }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="w-full bg-white sticky top-0 z-50 font-serif shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-b border-black">
+    <header className={`w-full bg-white sticky top-0 z-50 font-serif shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-b border-black -mt-5 transition-all duration-300 ${isScrolled ? '' : 'rounded-t-[24px]'}`}>
       {/* ── Desktop & Tablet Header ── */}
       <div className="hidden md:flex max-w-7xl mx-auto px-6 md:px-8 py-3 items-center justify-between w-full">
         <Link href="/" className="flex items-center gap-3">

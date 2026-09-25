@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full min-h-screen bg-[var(--color-background)] pb-12 font-serif">
+    <main className="w-full min-h-screen bg-[var(--color-background)] pb-12 font-serif flex flex-col">
       <Header onOpenQuote={handleOpenQuote} />
       <Hero onOpenQuote={handleOpenQuote} />
       <TrustMetrics />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jomolhari } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 
 const jomolhari = Jomolhari({
   weight: "400",
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${jomolhari.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-serif">
+        <AnnouncementBar />
         {children}
         <Footer />
       </body>
