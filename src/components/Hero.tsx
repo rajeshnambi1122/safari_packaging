@@ -10,11 +10,11 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
   return (
-    <section className="w-full min-h-[calc(100svh-73px)] lg:min-h-[500px] xl:min-h-[600px] overflow-hidden flex flex-col justify-between lg:flex-row lg:items-center py-8 sm:py-10 lg:py-12">
+    <section className="w-full min-h-[calc(100svh-110px)] lg:min-h-[500px] xl:min-h-[600px] overflow-hidden flex flex-col justify-between lg:flex-row lg:items-center py-4 sm:py-8 lg:py-12">
 
       {/* ── Left column: headline + subtitle + desktop buttons ── */}
 
-      <div className="flex-1 flex flex-col gap-4 sm:gap-5 px-5 sm:px-8 lg:pl-12 xl:pl-20 lg:max-w-lg xl:max-w-xl font-serif lg:shrink-0">
+      <div className="lg:flex-1 flex flex-col gap-2 sm:gap-4 px-5 sm:px-8 lg:pl-12 xl:pl-20 lg:max-w-lg xl:max-w-xl font-serif lg:shrink-0">
 
         {/* Responsive Headline */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-[44px] text-[var(--color-primary)] font-serif leading-tight font-bold">
@@ -45,8 +45,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
       </div>
 
       {/* ── Hero Image: fluid aspect ratio, responsive padding on mobile, bleeds right on desktop ── */}
-      <div className="w-full sm:px-6 mt-6 lg:mt-0 lg:flex-1 lg:px-0 lg:flex lg:justify-end animate-slide-in-right">
-        <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] max-w-2xl lg:max-w-[600px] xl:max-w-[700px] ml-auto">
+      <div className="w-full sm:px-6 mt-2 lg:mt-0 lg:flex-1 lg:px-0 lg:flex lg:justify-end animate-slide-in-right">
+        <div className="relative w-full aspect-[2/1] sm:aspect-[16/9] lg:aspect-[4/3] max-w-2xl lg:max-w-[600px] xl:max-w-[700px] ml-auto">
           <Image
             src="/images/hero_image.png"
             alt="Safari Custom Food Packaging Box"
@@ -59,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
       </div>
 
       {/* ── Mobile buttons: centered stack matching design hierarchy ── */}
-      <div className="lg:hidden flex flex-col items-center gap-3.5 mt-6 px-4 w-full">
+      <div className="lg:hidden flex flex-col items-center gap-3.5 px-4 w-full">
         <Button
           variant="primary"
           className="w-full max-w-[200px] text-lg sm:text-xl py-2.5"
